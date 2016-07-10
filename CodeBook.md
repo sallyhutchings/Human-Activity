@@ -17,13 +17,13 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The data from the study was downloaded using this link and extracted to a folder called "UCI HAR Dataset":
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Here are the details of the files used in this project (for full details of available files see the readme file "/UCI HAR Dataset/README.txt"):
-* Feature labels ("/UCI HAR Dataset/features.txt") which contains two fields, the feature ID and the feature label.
-* Activity labels ("./UCI HAR Dataset/activity_labels.txt") which contains  similar information for the activities (an ID and a label).
-* Train data:
+1. Feature labels ("/UCI HAR Dataset/features.txt") which contains two fields, the feature ID and the feature label.
+2. Activity labels ("./UCI HAR Dataset/activity_labels.txt") which contains  similar information for the activities (an ID and a label).
+3. Train data:
 ..* Feature measurements  ("./UCI HAR Dataset/train/X_train.txt"): values corresponding to the feature labels
 ..* Activity IDs  ("./UCI HAR Dataset/train/y_train.txt"): a list of activity IDs corresponding to the feature measurements
 ..* Subject IDs  ("./UCI HAR Dataset/train/subject_train.txt"): a list of subject IDs corresponding to the feature measurements
-* Test data:
+4. Test data:
 ..* Feature measurements  ("./UCI HAR Dataset/test/X_test.txt"): values corresponding to the feature labels
 ..* Activity IDs  ("./UCI HAR Dataset/test/y_test.txt"): a list of activity IDs corresponding to the feature measurements
 ..* Subject IDs  ("./UCI HAR Dataset/test/subject_test.txt"): a list of subject IDs corresponding to the feature measurements
