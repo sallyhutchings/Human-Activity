@@ -5,11 +5,11 @@
 In this document you will find a description of the input data, output data and any transformations or intermediate steps that were performed to arrive at the ouput data set. In essence, a description and explanation of the steps performed in the script run_analysis.R.
 
 At a high level, run_analysis.R does the following.
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names.
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  1. Merges the training and the test sets to create one data set.
+  2. Extracts only the measurements on the mean and standard deviation for each measurement.
+  3. Uses descriptive activity names to name the activities in the data set
+  4. Appropriately labels the data set with descriptive variable names.
+  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## 1. Merge the training and the test sets to create one data set.
 All the data forming the basis of this analysis comes from a study on human activity whose details can be found here:
@@ -124,14 +124,14 @@ Labelled_data <- merge(ActivityLabels,Selected_data,
 
 ## 4. Appropriately labels the data set with descriptive variable names.
 This step requires identifying a list of all the parts of the naming convention used in the study that are unclear or untidy and replacing them with clear and descriptive counterparts. To do this I will need to apply the function *gsub* over a list of substitutions and therefore I first define a new function, *gsub2*, which loops *gsub* over a list (thanks to Jean-Robert's response on Stack Overflow for this function, which can be found here: http://stackoverflow.com/a/6954308). The text patterns I have identified as needing replacement are:
-* "t" at the start instead of "Time"
-* "f" at the start instead of "Frequency"
-* "acc" or "Acc" instead of "Acceleration"
-* "mag" or "Mag" instead of "Magnitude"
-* "gyro" or "Gyro" instead of "Gyroscope"
-* "std()" or "Std()" instead of "Std"
-* "mean()" or "Mean()" instead of "Mean"
-* "body" or "Body" + repetitions instead of a single "Body"
+  * "t" at the start instead of "Time"
+  * "f" at the start instead of "Frequency"
+  * "acc" or "Acc" instead of "Acceleration"
+  * "mag" or "Mag" instead of "Magnitude"
+  * "gyro" or "Gyro" instead of "Gyroscope"
+  * "std()" or "Std()" instead of "Std"
+  * "mean()" or "Mean()" instead of "Mean"
+  * "body" or "Body" + repetitions instead of a single "Body"
 I will also replace any hyphens and use the capitalisation of the words in the feature name as the only separation.
 
 ### 4a. Define a new function to substitute through a list (thanks to Jean-Robert's response on Stack Overflow for this)
