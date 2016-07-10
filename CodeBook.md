@@ -20,13 +20,13 @@ Here are the details of the files used in this project (for full details of avai
 * Feature labels ("/UCI HAR Dataset/features.txt") which contains two fields, the feature ID and the feature label.
 * Activity labels ("./UCI HAR Dataset/activity_labels.txt") which contains  similar information for the activities (an ID and a label).
 * Train data:
-..1. Feature measurements  ("./UCI HAR Dataset/train/X_train.txt"): values corresponding to the feature labels
-..2. Activity IDs  ("./UCI HAR Dataset/train/y_train.txt"): a list of activity IDs corresponding to the feature measurements
-..3. Subject IDs  ("./UCI HAR Dataset/train/subject_train.txt"): a list of subject IDs corresponding to the feature measurements
+..* Feature measurements  ("./UCI HAR Dataset/train/X_train.txt"): values corresponding to the feature labels
+..* Activity IDs  ("./UCI HAR Dataset/train/y_train.txt"): a list of activity IDs corresponding to the feature measurements
+..* Subject IDs  ("./UCI HAR Dataset/train/subject_train.txt"): a list of subject IDs corresponding to the feature measurements
 * Test data:
-..1. Feature measurements  ("./UCI HAR Dataset/test/X_test.txt"): values corresponding to the feature labels
-..2. Activity IDs  ("./UCI HAR Dataset/test/y_test.txt"): a list of activity IDs corresponding to the feature measurements
-..3. Subject IDs  ("./UCI HAR Dataset/test/subject_test.txt"): a list of subject IDs corresponding to the feature measurements
+..* Feature measurements  ("./UCI HAR Dataset/test/X_test.txt"): values corresponding to the feature labels
+..* Activity IDs  ("./UCI HAR Dataset/test/y_test.txt"): a list of activity IDs corresponding to the feature measurements
+..* Subject IDs  ("./UCI HAR Dataset/test/subject_test.txt"): a list of subject IDs corresponding to the feature measurements
 Note that I have not included the inertial signals data, because the analysis I will be doing only involves variables related to the mean or standard deviation of features and therefore these are not relevant.
 **Note on reading in files:** *fread* was my chosen method as it's faster and more convenient than data.table and automatically detects key parameters such as the delimeter.
 
